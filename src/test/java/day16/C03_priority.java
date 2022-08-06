@@ -3,7 +3,7 @@ package day16;
 import Utilities.TestBase;
 import org.testng.annotations.Test;
 
-public class C_priority extends TestBase {
+public class C03_priority extends TestBase {
     // testNG alfabetik çalışır, farklı sıralama için öncelik tanımlaması
     // yapılabilir - priority küükten büyüğe çalışır,
     // değer atanmayan priority default 0 alır
