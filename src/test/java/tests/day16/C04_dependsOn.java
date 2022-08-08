@@ -1,6 +1,5 @@
-package day16;
+package tests.day16;
 
-import Utilities.TestBase;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

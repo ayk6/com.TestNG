@@ -1,10 +1,9 @@
-package day16;
+package tests.day16;
 
-import Utilities.TestBase;
+import utilities.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 

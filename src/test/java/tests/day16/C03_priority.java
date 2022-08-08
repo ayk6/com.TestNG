@@ -1,6 +1,6 @@
-package day16;
+package tests.day16;
 
-import Utilities.TestBase;
+import utilities.TestBase;
 import org.testng.annotations.Test;
 
 public class C03_priority extends TestBase {
