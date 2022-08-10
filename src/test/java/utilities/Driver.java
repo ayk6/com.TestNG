@@ -44,8 +44,6 @@ public class Driver {
                     WebDriverManager.edgedriver().setup();
                     driver = new EdgeDriver();
             }
-            WebDriverManager.edgedriver().setup();
-            driver = new EdgeDriver();
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         }
