@@ -18,8 +18,7 @@ public class ConfigReader {
             throw new RuntimeException(e);
         }
     }
-
     public static String getProperty(String key){
-         return getProperty(key);
+         return properties.getProperty(key);
     }
 }
