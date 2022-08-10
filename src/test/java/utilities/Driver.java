@@ -10,7 +10,7 @@ public class Driver {
     // page object modelde driver için extends yerine driver classında
     // static methodlar oluşturulur
 
-    static WebDriver driver;
+    public static WebDriver driver;
 
     public static WebDriver getDriver() {
         if (driver == null) {
@@ -23,6 +23,8 @@ public class Driver {
     }
 
     public static void closeDriver() {
-        driver.close();
+        if (driver!=null){
+        driver.close();}
+        driver=null;
     }
 }
