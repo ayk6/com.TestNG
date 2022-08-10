@@ -12,6 +12,13 @@ import java.time.Duration;
 public class Driver {
     // page object modelde driver için extends yerine driver classında
     // static methodlar oluşturulur
+    // POM'de Driver class'ındaki getDriver methoduna obje ile
+    // ulaşılmasını engellemek için Singleton Pattern kullanılır
+    // Singleton Pattern = Tekil kullanım - obje ile kullanılamaz
+    // constructor private yapılır
+
+    private Driver() {
+    }
 
     public static WebDriver driver;
 
