@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!-- xml dosyası ile projeden istenen test,class, package ya da
+ methodları çalıştırabiliriz -->
+
+<suite name="run determined classes and packages">
+    <test name="classes">
+        <classes>
+            <class name="tests.day16.C03_priority"></class>
+            <class name="tests.day17.C03_usingPageClass"></class>
+        </classes>
+    </test>
+    <test name="packages">
+        <packages>
+            <package name="tests.day19"></package>
+        </packages>
+    </test>
+</suite>

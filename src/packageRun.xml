@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!-- xml dosyası ile projeden istenen test,class, package ya da
+ methodları çalıştırabiliriz -->
+
+<suite name="run determined packages">
+    <test name="packages">
+        <packages>
+            <package name="tests.day19"></package>
+            <package name="tests.day18"></package>
+        </packages>
+    </test>
+</suite>
