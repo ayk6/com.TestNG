@@ -9,11 +9,11 @@ import org.testng.annotations.Test;
 
 
 public class C05_assertions extends TestBase {
-    @Test
+    @Test(groups = "group2")
     public void test01(){
 
         // go to amazon
-        driver.get("https://www.amazon.com");
+         driver.get("https://www.amazon.com");
         // test title
         String expTittle="Amazon";
         Assert.assertTrue(driver.getTitle().contains(expTittle));

@@ -1,13 +1,26 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <!-- xml dosyası ile projeden istenen test,class, package ya da
- methodları çalıştırabiliriz -->
+ methodları çalıştırabiliriz
+
+  çalışması istenen test methodları include (yalnızca belirtilen çalışır)
+  istenmeyenler exclude olarak işaretlenebilir
+
+  depends on ile include birlikte kullanılmaz - rte verir
+
+  verbose attribute console mesajlarını düzenler
+  1 en az - 10 en fazla
+  -->
+
 
 <suite name="run determined classes">
     <test name="classes">
         <classes>
-            <class name="tests.day16.C03_priority"></class>
-            <class name="tests.day17.C03_usingPageClass"></class>
+            <class name="tests.day16.C03_priority">
+                <methods>
+                    <exclude name="test02"></exclude>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

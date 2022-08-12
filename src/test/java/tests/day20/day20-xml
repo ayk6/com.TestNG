@@ -1,0 +1,24 @@
+
+xml dosyası ile projeden istenen test,class, package ya da
+ methodları çalıştırabiliriz
+
+
+  çalışması istenen test methodları include (yalnızca belirtilen çalışır)
+  istenmeyenler exclude olarak işaretlenebilir
+
+  depends on ile include birlikte kullanılmaz - rte verir
+
+  verbose attribute console mesajlarını düzenler
+  1 en az - 10 en fazla
+
+ xml dosyaları çalıştıracağımız suite hiyerarşisine grup atamaları
+     yapılabilir
+
+     çaalışacak class ya da methodları xml içerisine dahil etmek yerine
+     framework testler gruplara eklenebilir
+     test methodu yanına groups eklenir
+     xml içerisinde çalışacak gruplar ve method-class çalıştıracağı package
+     tanımlanır
+
+
+  .* ismi ile tüm testler çalıştırılır

@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!--
+    xml dosyaları çalıştıracağımız suite hiyerarşisine grup atamaları
+    yapılabilir
+
+    çaalışacak class ya da methodları xml içerisine dahil etmek yerine
+    framework testler gruplara eklenebilir
+    test methodu yanına groups eklenir
+    xml içerisinde çalışacak gruplar ve method-class çalıştıracağı package
+    tanımlanır
+
+-->
+<suite name="determined groups">
+    <test name="determined groups">
+        <groups>
+            <run>
+                <include name="group2"></include>
+            </run>
+        </groups>
+        <packages>
+            <package name="tests.day16"></package>
+        </packages>
+    </test>
+</suite>

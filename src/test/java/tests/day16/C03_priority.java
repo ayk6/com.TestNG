@@ -16,7 +16,7 @@ public class C03_priority extends TestBase {
     public void test02() {
         driver.get("https://www.bestbuy.com");
     }
-    @Test // default 0  // iki
+    @Test (groups = "group1")// default 0  // iki
     public void test03() {
         driver.get("https://www.github.com");
     }

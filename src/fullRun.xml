@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!-- .* ismi ile tüm testler çalıştırılır
+-->
+
+<suite name="run all tests">
+    <packages>
+        <package name=".*"></package>
+    </packages>
+</suite>
