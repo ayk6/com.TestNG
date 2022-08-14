@@ -46,7 +46,7 @@ public abstract class TestBaseReport {
         }
         Driver.closeDriver();
     }
-    // Raporlandırmayı sonlandırmak icin
+    // Raporlandırmayı sonlandırmak için
     @AfterTest(alwaysRun = true)
     public void tearDownTest() {
         extentReports.flush();
