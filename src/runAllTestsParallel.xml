@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!-- parallel ile paralel çalışma seviyesi ,
+    thread-count ile aynı anda çalışacak max browser sayısı belirlenir
+-->
+<suite name="parallel test - run all tests" verbose="3" parallel="classes" thread-count="3">
+    <test name="regression">
+        <packages>
+            <package name="tests.*"></package>
+        </packages>
+    </test>
+</suite>
