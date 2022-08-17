@@ -1,0 +1,35 @@
+package tests.day22;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import utilities.TestBaseCross;
+
+public class C01_CrossTest extends TestBaseCross {
+    @Test(groups = "group2")
+    public void test01() {
+
+        // Test base corss ve cross driver oluşturuldu
+        // utilities
+
+        // go to amazon
+        driver.get("https://www.amazon.com");
+        // test title
+        String expTittle = "Amazon";
+        Assert.assertTrue(driver.getTitle().contains(expTittle));
+        // test searchBox
+        WebElement srcBox = driver.findElement(By.id("twotabsearchtextbox"));
+        Assert.assertTrue(srcBox.isDisplayed());
+        // search maandosi
+        srcBox.sendKeys("mandosi" + Keys.ENTER);
+        // test searching
+        WebElement resultText = driver.findElement(By.xpath("//div[@class='a-section a-spacing-small a-spacing-top-small']"));
+        Assert.assertTrue(resultText.isDisplayed());
+        // test resultText contains mandosi
+        Assert.assertTrue(resultText.getText().contains("mandosi"));
+        driver.close();
+        // passed
+    }
+}
