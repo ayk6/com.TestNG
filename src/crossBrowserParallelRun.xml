@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!--
+    farklı tarayıcılar için test elması öncesinde parameter
+    notasyonu eklenir. Cross test base classına parametre olarak
+    browser gönderilir
+
+    aynı anda farklı browserlarda test için parallel tagı eklenir
+-->
+
+<suite name="cross browser class run" parallel="tests" thread-count="2">
+    <test name="cross browser edge">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="tests.day22.C01_CrossTest"></class>
+        </classes>
+    </test>
+    <test name="cross browser chrome">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="tests.day22.C01_CrossTest"></class>
+
+        </classes>
+    </test>
+</suite>
